@@ -13,6 +13,9 @@ export default new Vuex.Store({
     // data代表傳入的資料
     addCart (state, data) {
       state.items.push(data)
+    },
+    delCart (state, index) {
+      state.items.splice(index, 1)
     }
   },
   actions: {
